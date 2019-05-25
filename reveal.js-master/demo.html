@@ -42,63 +42,74 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
+				
+				<section>
 					<h1>成都信息工程大学</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h4>基于Python地理空间大数据的网络舆情监测研究</h4>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						Created by 韩光川
+					</p>
+					<p>
+						tutor 薛亚婷
+					</p>
+				</section>
+				
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
+				<section id="themes">
+					<h2>Themes</h2>
 					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+				
+				</section>
+
+				<section>
+					<h2>研究背景意义</h2>
+					<p>
+						网络舆情是社会舆论的一种表现形式，有效监测网络热点事件,有助于制定科学的决策。
 					</p>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<h2>国内外研究现状</h2>
 						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>国外研究现状</h2>
+						<p>数据处理和分析海量社交网络舆情数据大量应用Hadoop平台, 具有强大的分布式存储和计算能力,用于存储和处理海量数据</p>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
+						<h2>国内研究现状</h2>
+						<p>目前我国大多地方在对网络舆情进行监测时仍采取传统的人工方式，因此在对舆情信息的收集和分析研判时效率较低</p>
 						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
 					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-					</p>
-					<p>
-						(NOTE: Use ctrl + click in Linux.)
-					</p>
 				</section>
 
 				<section>
@@ -128,30 +139,43 @@
 
 				<section>
 					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+						<h2>需求分析</h2>
+						<!--<p class="fragment">登录注册</p>
+						<p class="fragment">地图浏览</p>
+						<p class="fragment">城市散列图</p>
+						<p class="fragment">日期切换</p>
+						<p class="fragment">城市表显示</p>
+						<p class="fragment">省份表显示</p>
+						<p class="fragment">新闻源切换</p>-->
+						<!--<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>-->
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
+						<!--<h2>Fragment Styles</h2>
 						<p>There's different types of fragments, like:</p>
 						<p class="fragment grow">grow</p>
 						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-out">fade-out</p>-->
 						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<!--<span style="display: inline-block;" class="fragment fade-right">登录注册, </span>
+							<span style="display: inline-block;" class="fragment fade-right">地图浏览, </span>
+							<span style="display: inline-block;" class="fragment fade-right">城市散列图, </span><br/>
+							<span style="display: inline-block;" class="fragment fade-right">日期切换, </span>
+							<span style="display: inline-block;" class="fragment fade-right">城市表显示, </span>
+							<span style="display: inline-block;" class="fragment fade-right">省份表显示, </span><br/>
+							<span style="display: inline-block;" class="fragment fade-right">新闻源切换, </span>
 							<span style="display: inline-block;" class="fragment fade-up">up, </span>
 							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>-->
 						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+						<p class="fragment fade-in-then-out">登录注册</p>
+						<p class="fragment fade-in-then-out">地图浏览</p>
+						<p class="fragment fade-in-then-out">日期切换</p>
+						<p class="fragment fade-in-then-out">城市散列图</p>
+						<p class="fragment fade-in-then-out">城市表显示</p>
+						<p class="fragment fade-in-then-out">省份表显示</p>
+						<p class="fragment fade-in-then-out">新闻源切换</p>
+						<!--<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>-->
+						<!--<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>-->
 					</section>
 				</section>
 
@@ -188,20 +212,14 @@
 				</section>
 
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<!--<section data-background="#dddddd">-->
+					<section data-background="picture/flowChart.jpg" data-background-size="800px">
+					<h2>技术路线图</h2>
+						
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+					<section data-background="picture/flowChart.jpg" data-background-size="800px">
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+					<!--<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
 						<h2>Tiled Backgrounds</h2>
 						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
 					</section>
@@ -213,49 +231,95 @@
 					</section>
 					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
 						<h2>... and GIFs!</h2>
-					</section>
+					</section>-->
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" >
+					<h2>数据层</h2>
 					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+						采集舆论数据、城市数据、省份数据。
 					</p>
-					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+					<!--<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>-->
+					
+					<pre><code class="hljs" data-trim data-line-numbers="1-6">	
+						#判断页尾
+						if "已经到底啦~"==browser.find_element_by_class_name('msg').text:
+						#定位时间
+						father=browser.find_elements_by_css_selector(".item.clearfix")
+						#删除无效时间
+						father_exc=browser.find_elements_by_class_name('dialog-list-wrap')
+					</code></pre>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
+					<h2>逻辑层</h2>
 					<p>
-						You can override background transitions per-slide.
+						处理舆论数据，获取经纬度
 					</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					<pre><code class="hljs" data-trim data-line-numbers="1-9">	
+						#统一时间format
+						if(len(time.text)<9):
+							time_all.append(str(sysTime.localtime(sysTime.time()).tm_mon)+"月"+str(sysTime.localtime(sysTime.time()).tm_mday)+"日")
+						else:
+							time_all.append(time.text[:-5])
+						#获取经纬度
+						response=requests.get(url='http://api.map.baidu.com/geocoder',params=params,headers=headers)
+						lat=getjson(city).get("result").get("location").get("lat")
+						lng=getjson(city).get("result").get("location").get("lng")
+					</code></pre>
+				</section>
+				
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>视图层</h2>
+					<p>
+						数据的可视化展示
+					</p>
+					<pre><code class="hljs" data-trim data-line-numbers="1-4">	
+					//获取城市名称，经纬度
+					<for(int i=0;i<lCityCounts.size();i++){out.print("\""+lCityCounts.get(i).getCity()+"\":["+lCityCounts.get(i).getLng()+","+lCityCounts.get(i).getLat()+"],");}>
+					//获取城市名称对应统计次数
+		            <for(int i=0;i<lCityCounts.size();i++){out.print("{name: '"+lCityCounts.get(i).getCity()+"', value: "+lCityCounts.get(i).getCount()+"},");} >
+					</code></pre>
+				</section>
+				
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>分析层</h2>
+					<p>
+						结合可视化界面分析舆论时效性和影响范围
+					</p>
+					<pre><code class="hljs" data-trim data-line-numbers="1-5">	
+					//日期切换
+					int indexNow = getIndex() - 1;
+					request.put("table", tableList.get(indexNow));
+					int indexNow = getIndex() + 1;
+					request.put("table", tableList.get(indexNow));
+					</code></pre>
 				</section>
 
 				<section data-background-iframe="https://hakim.se" data-background-interactive>
 					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Iframe Backgrounds</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
+						<h2>舆论分析系统展示</h2>
+						<p>系统界面、功能、异常展示</p>
 					</div>
 				</section>
 
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-import React, { useState } from 'react';
+					import React, { useState } from 'react';
 
-function Example() {
-  const [count, setCount] = useState(0);
+					function Example() {
+					  const [count, setCount] = useState(0);
 
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
+					  return (
+						&lt;div&gt;
+						  &lt;p&gt;You clicked {count} times&lt;/p&gt;
+						  &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							Click me
+						  &lt;/button&gt;
+						&lt;/div&gt;
+					  );
+					}
 					</code></pre>
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
